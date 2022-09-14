@@ -11,19 +11,19 @@
 body{
     background-color: rgb(0, 0, 0);
     padding-top: 30px;
+    padding-inline: 30px;
     background-image: url('/Projeto-Individual-SENAC/img/estrelas.gif');
+
 }
 
 header{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-bottom: 60px;
-    height: 40px;
+    justify-content: space-between;
+    margin-bottom: 160px;
     min-width: 375px;
 }
 header h1{
-    display: none;
     font-size: 1.5rem;
     transition: 500ms linear;
 }
@@ -56,6 +56,7 @@ main{
     flex-direction: column;
     align-items: center;
     min-width: 375px;
+    height: 100vh
 }
 .fotoDePerfil{
     border-radius: 50%;
@@ -82,22 +83,34 @@ main p{
 .redesSociais img{
     width: 28px
 }
+.seta{
+    width: 128px;
+    margin-top: 220px
+}
 
-@media (min-width: 775px) {
+#sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+@media (max-width: 775px) {
     header{
-        flex-direction: row;
-        justify-content: space-between;
-        margin-inline: 70px;
+        justify-content: center;
+        min-width: 500px;
     }
     header h1{
-        display: flex;
-
+        display: none;
+    }
+    .infos p{
+        font-size: 1.4rem;
     }
     main{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -60%);
+        margin-top: 160px;
+        min-width: 500px;    
+        height: 100vh
     }
     main h2{
         font-size: 3rem;
