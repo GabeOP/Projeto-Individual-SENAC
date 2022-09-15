@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400&family=Orbitron:wght@500&display=swap');
 
 *{
     font-family: 'Noto Sans', sans-serif;
@@ -12,117 +12,6 @@ body{
     background-color: rgb(0, 0, 0);
     background-image: url('/Projeto-Individual-SENAC/img/estrelas.gif');
 }
-/* header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 160px;
-    min-width: 375px;
-}
-header h1{
-    font-size: 1.5rem;
-    transition: 500ms linear;
-}
-header h1:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-}
-header p{
-    font-size: 1rem
-}
-.infos{
-    display: flex;
-    align-items: center;
-    gap: 2.5rem;
-    color: white;
-}
-.infos img{
-    width: 120px;
-}
-a{
-    text-decoration: none;
-    transition: 400ms linear;
-}
-a:hover{
-    transform: scale(1.06);
-}
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 375px;
-    height: 100vh
-}
-.fotoDePerfil{
-    border-radius: 50%;
-    border: 1px solid white;
-    width: 220px;
-    margin-bottom: 10px;
-}
-.fotoDePerfil:hover{
-    border: 1px solid blue;
-    transition: border 1s ease;
-}
-main h2{
-    font-size: 2rem;
-}
-main p{
-    font-size: 1.1rem;
-}
-.redesSociais{
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-.redesSociais img{
-    width: 28px
-}
-.seta{
-    width: 128px;
-    margin-top: 220px
-}
-#sobre{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-}
-
-@media (max-width: 775px) {
-    header{
-        justify-content: center;
-        min-width: 500px;
-    }
-    header h1{
-        display: none;
-    }
-    .infos p{
-        font-size: 1.4rem;
-    }
-    main{
-        margin-top: 160px;
-        min-width: 500px;    
-        height: 100vh
-    }
-    main h2{
-        font-size: 3rem;
-    }
-    main p{
-        font-size: 1.4rem;
-    }
-}
- */
-
-
-
-
-
-
-
-
-
 
 /* CARD COMPLETO */
 .card{
@@ -218,6 +107,9 @@ main p{
  .interesse p{
     color: white;
  }
+ .formulario{
+    width: 100%;
+ }
  .sobre img{
     display: none;
  }
@@ -248,4 +140,59 @@ main p{
     font-size: 1rem;
     border: 1px solid gray;
  }
+
+ #card-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .formasDeContato div{
+    display: flex;
+    gap: 12px;
+    margin-block: 16px;
+ }
+ .linha{
+    width: 100%;
+ }
  /* FIM SOBRE MIM, INTERESSE E CONTATO */
+
+ @media (min-width: 700px){
+    header{
+        justify-content: space-between;
+        padding-inline: 20px;
+    }
+    header h1{
+        display:block;
+        color:#ba8a4d;
+        font-family: 'Orbitron', sans-serif;
+        margin-left: 30px;
+    }
+    .infos, section{
+        font-size: 1.3rem;
+    }
+    .formulario{
+        width: 100%;
+     }
+ }
+
+ @media (min-width: 900px){
+    .sobre div{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sobre div img{
+        display: block;
+        margin: auto;
+    }
+    .linha{
+        display: none;
+    }
+    #card-formulario{
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .formulario{
+        width: 50%;
+     }
+ }
