@@ -16,7 +16,11 @@ body{
     background-color: rgb(0, 0, 0);
     background-image: url('/Projeto-Individual-SENAC/img/estrelas.gif');
 }
-
+.fechaTag{
+   display: flex;
+   justify-content: end;
+   align-items:baseline;
+}
 /* CARD COMPLETO */
 .card{
     height: 90vh;
@@ -44,7 +48,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.2rem;
+    gap: 2.5rem;
  }
  .infos a{
     color: #ba8a4d;
@@ -119,12 +123,18 @@ body{
    width: 30%;
    height: 200px;
    background-color: rgb(169, 169, 169);
+   background-image: url("/img/loading.gif");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 80px;
+   opacity: 70%;
    border-radius: 6px;
    padding: 6px;
    display: flex;
    align-items: flex-end;
    font-size: 1.3rem;
    font-family: 'Orbitron', sans-serif;
+
  }
  .projeto p{
     color: white;
