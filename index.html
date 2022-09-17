@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Oliveira</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./img/favicon-32x32.png">
 </head>
 <body>
     
-    
-    <header> <!-- O cabeçalho do site onde ficam os links-->
-        <h1>GOP</h1>
-        <div class="infos">
-            <a href="#card-sobre"><p>Sobre mim</p></a>
-            <a href="#card-projeto"><p>Projetos</p></a>
-            <a href="#card-formulario"><p>Contato</p></a>
-        </div>
+    <header> <!-- O cabeçalho do site onde fica a logo e os links-->
+        <img src="./img/GOP.png" alt="">
+        <ul class="infos">
+            <li><a href="#card-sobre"><p>Sobre mim</p></a></li>
+            <li><a href="#card-projeto"><p>Projetos</p></a></li>
+            <li><a href="#card-formulario"><p>Contato</p></a></li>
+        </ul>
     </header>
-    <div class="card">
-
-        <main> <!-- o conteúdo principal do site onde fica a apresentação e as redes sociais -->
+    
+    <div class="card"> <!-- criei essa div para englobar todo o main e conseguir manter em um posicionamento igual em todos os dispositivos -->
+        <main> <!-- o conteúdo principal do site onde fica a minha foto e as redes sociais -->
             <img class="fotoDePerfil" src="./img/perfil.png" alt="Foto de perfil">
             <div class="description">
                 <h2>Gabriel de Oliveira</h2>
@@ -31,15 +30,15 @@
             <div class="redesSociais">
                 <a href="#"><img title="Discord" src="./img/logo-discord.png" alt="Logo do discord"></a>
                 <a href="https://github.com/GabeOP" target="_blank"><img title="Github" src="./img/logo-github.png" alt="Logo do Github"></a>
-                <a href="https://www.linkedin.com/in/gabriel-oliveira-pereira/" target="_blank"><img src="./img/logo-linkedin.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/gabriel-oliveira-pereira/" target="_blank"><img title="Linkedin" src="./img/logo-linkedin.png" alt=""></a>
                 <a href="https://steamcommunity.com/id/gabriel2378" target="_blank"><img title="Steam" src="./img/logo-steam.png" alt="Logo da Steam"></a>
                 <a href="https://www.instagram.com/gabb_op/"><img title="Instagram" target="_blank" src="./img/logo-instagram.png" alt="Logo do Instagram"></a>
             </div>
-            
         </main>
         <img class="seta" src="./img/seta-baixo.gif" alt="">
     </div>
-    <section id="card-sobre">
+
+    <section id="card-sobre"> <!-- A section que fala sobre mim -->
         <div class="sobre">
             <h2><code><</code>/Sobre mim<code>></code></h2>
             <div>
@@ -52,7 +51,7 @@
         </div>
     </section>
 
-    <section id="card-projeto">
+    <section id="card-projeto"> <!-- A section que mostra os meus projetos -->
         <div class="projeto">
             <h2><code><</code>/Projetos<code>></code></h2>
             <div class="card-projeto">
@@ -63,23 +62,26 @@
         </div>
     </section>
 
-    <section id="card-formulario">
+    <footer id="card-formulario"> <!-- O rodapé da página -->
+
         <h2><code><</code>/Contato<code>></code></h2>
 
         <div class="box-formulario">
-            <form class="formulario">
-                
+            <form action="/" class="formulario">
+                <div class="nome-email" >
+                    <div>
+                        <input placeholder="Digite o seu nome" type="text" id="name">
+                    </div>
+                    <div>
+                        <input placeholder="Digite o seu e-mail" type="email" id="email">
+                    </div>
+                </div>
+
                 <div>
-                    <input placeholder="Digite o seu nome" type="text" id="name">
+                    <textarea style="max-width: 100%; min-width: 80%; max-height: 250px; min-height: 150px" placeholder="Digite a sua mensagem" id="msg" type="text" rows="4"></textarea>
                 </div>
                 <div>
-                    <input placeholder="Digite o seu e-mail" type="email" id="email">
-                </div>
-                <div>
-                    <input placeholder="Digite a sua mensagem" id="msg" type="text">
-                </div>
-                <div>
-                    <input class="btn" type="button" value="Enviar">
+                    <input class="btn" type="submit" value="Enviar">
                 </div>
             </form>
             
@@ -89,12 +91,12 @@
                     <p>gabrieloliveirap1@hotmail.com</p>
                 </div>
                 
-                <a href="https://wa.me/21982878534"><div>
+                <a href="https://wa.me/5521982878534"><div>
                     <img src="./img/whatsapp.png" alt="icone do whatsapp">
                     <p>(21)98287-8534</p>
                 </div></a>
             </div>
         </div>
-    </section>
+    </footer>
 </body>
 </html>
