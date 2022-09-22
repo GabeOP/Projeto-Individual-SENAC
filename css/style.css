@@ -7,7 +7,6 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -61,7 +60,6 @@ body{
  .infos a{
     color: #ba8a4d;
     font-weight: 400;
-    
  }
  ul{
    list-style: none;
@@ -76,6 +74,10 @@ body{
    box-sizing: 20px;
    transform: translate(4.5px, -4px);
    background-color: rgba(249, 249, 249, 0.389);
+   border-bottom: 1px solid rgba(0, 0, 0, 0.100);
+   border-left: 1px solid rgba(0, 0, 0, 0.100);
+   border-top: 1px solid rgba(0, 0, 0, 0.025);
+   border-right: 1px solid rgba(0, 0, 0, 0.025);
  }
 
  
@@ -99,8 +101,6 @@ body{
    width: 250px;
    box-shadow: 0px 2px 500px 1px rgba(255, 255, 255, 0.663);
  }
-
-
  .description{
     display: flex;
     flex-direction: column;
@@ -124,7 +124,6 @@ body{
  }
  .redesSociais img{
     width: 28px;
-
  }
  .redesSociais img:hover{
    border: 1px solid white;
@@ -153,12 +152,12 @@ body{
  .sobre p, .projeto p{
     font-weight: 300;
  }
+ 
  .card-projeto{
    display: flex; 
    justify-content: space-between;
    width: 100%;
  }
-
  .box-projeto{
    width: 30%;
    height: 200px;
@@ -173,9 +172,7 @@ body{
    display: flex;
    align-items: flex-end;
    font-size: 1.3rem;
-   font-family: 'Orbitron', sans-serif;
-
-   
+   font-family: 'Orbitron', sans-serif; 
  }
  .projeto p{
     color: white;
@@ -230,8 +227,7 @@ body{
  }
  #card-formulario{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;   
  }
  .formasDeContato div{
     display: flex;
@@ -250,10 +246,12 @@ body{
         color:#ba8a4d;
         margin-left: 30px;
     }
-
     .infos, section{
         font-size: 1.3rem;
     }
+    .projeto p{
+      font-size: 1.5rem;
+   }
     .box-projeto{
       height: 400px;
     }
@@ -261,7 +259,6 @@ body{
         width: 100%;
      }
  }
-
  @media (min-width: 900px){
    
    main{
@@ -287,7 +284,6 @@ body{
       display: flex;
       gap: 60px;
     }
-
     #box1{
       grid-area: a
     }
@@ -334,5 +330,4 @@ body{
         padding: 20px;
         background-color: rgb(221, 221, 221);
      }
-
  }
