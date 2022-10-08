@@ -92,6 +92,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 60px;
  }
  .fotoDePerfil{
     width: 220px;
@@ -161,6 +162,9 @@ body{
    justify-content: space-between;
    width: 100%;
  }
+ .card-projeto a{
+   width: 30%;
+ }
  .box-projeto{
    width: 30%;
    height: 200px;
@@ -181,7 +185,9 @@ body{
    background-size: cover;
    transition: .5s;
    cursor: pointer;
+   width: 100%;
  }
+
  .projeto p{
     color: white;
  }
@@ -301,6 +307,9 @@ body{
       width: 375px;
       height: 667px;
       padding: 20px;
+    }
+    .card-projeto a{
+      width: 375px;
     }
     .box-formulario{
       display: flex;
