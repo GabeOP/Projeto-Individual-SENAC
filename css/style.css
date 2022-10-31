@@ -187,7 +187,13 @@ body{
    cursor: pointer;
    width: 100%;
  }
-
+#box2{
+   background-image: url(../img/pokeapi.png);
+   background-size: cover;
+   transition: .5s;
+   cursor: pointer;
+   width: 100%;
+}
  .projeto p{
     color: white;
  }
